@@ -1,2 +1,224 @@
-hello this is firt hello
-<H1>Hello Danish</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Developer Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        /* Main content styles */
+        #showcase {
+            min-height: 400px;
+            background: url('/placeholder.svg?height=400&width=1200') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #about, #skills, #projects, #contact {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+        }
+        .skill-item, .project-item {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .skill-item h3, .project-item h3 {
+            margin-bottom: 5px;
+        }
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+        }
+        .skill-level {
+            background-color: #4CAF50;
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #35424a;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+            #showcase h1 {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Java Developer Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Java Developer Extraordinaire</h1>
+            <p>Crafting robust and scalable applications with Java</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate Java developer with 5+ years of experience in building enterprise-level applications. I specialize in Spring Boot, Hibernate, and RESTful API development. My goal is to create efficient, maintainable, and scalable solutions that solve real-world problems.</p>
+            <p>When I'm not coding, you can find me contributing to open-source projects, mentoring junior developers, or exploring the latest trends in Java and software architecture.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Spring Boot</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Hibernate</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>RESTful APIs</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Microservices</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>E-commerce Platform</h3>
+                <p>A scalable online shopping system built with Spring Boot, this microservices-based e-commerce platform handles high traffic and complex transactions seamlessly.</p>
+                <a href="https://github.com" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h3>Task Management API</h3>
+                <p>A robust API built with Java and Spring Boot, featuring user authentication, task CRUD operations, and team collaboration features.</p>
+                <a href="https://github.com" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h3>Real-time Chat Application</h3>
+                <p>A real-time chat application using Java backend with WebSocket for instant message delivery and Spring Security for user management.</p>
+                <a href="https://github.com" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Interested in working together? Feel free to reach out!</p>
+            <p>Email: <a href="mailto:javadev@example.com">javadev@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/javadev</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">github.com/javadev</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Java Developer Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
