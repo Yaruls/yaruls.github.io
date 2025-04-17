@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yarul Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5L1Up2P4NdUAW5xyU8FdYffvBfaPJKDc0RGM2F4j2ZfkoN+Ow3oQYkCILzZjk8wRXi+5MZ5QaY5n1+z9lgkPWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      color: #00ff9d;
+    }
+    p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #bbbbbb;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      max-width: 800px;
+      margin-bottom: 3rem;
+    }
+    .skill {
+      background-color: #1e1e1e;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      color: #00ff9d;
+      transition: background 0.3s;
+    }
+    .skill:hover {
+      background-color: #292929;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      background: #0f0f0f;
+      color: #777;
+    }
+    .links a {
+      color: #00ff9d;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hey, I'm <span class="highlight">Yarul Singh</span></h1>
+    <p>
+      A Software Engineer with 5+ years of experience in Java and AWS Lambdas using Node.js.
+      Passionate about writing clean code, solving real-world problems, and learning emerging technologies. Known for being organized, optimistic, and eager to grow through collaboration.
+    </p>
+    <div class="skills">
+      <div class="skill">Java</div>
+      <div class="skill">Spring Boot</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">AWS Lambda</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">Microservices</div>
+      <div class="skill">Git</div>
+      <div class="skill">JIRA</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Jenkins</div>
+    </div>
+    <div class="links">
+      <a href="mailto:yarulsingh@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+      <a href="https://linkedin.com/in/yaruls" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://github.com/yaruls" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Yarul Singh. Crafted with simplicity.</p>
+  </footer>
+</body>
+</html>
