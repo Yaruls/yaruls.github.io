@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yarul Singh</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5L1Up2P4NdUAW5xyU8FdYffvBfaPJKDc0RGM2F4j2ZfkoN+Ow3oQYkCILzZjk8wRXi+5MZ5QaY5n1+z9lgkPWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -71,18 +70,20 @@
       background: #0f0f0f;
       color: #777;
     }
-    .links a {
-      color: #00ff9d;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 500;
-      display: inline-flex;
+    .links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 1.1rem;
+      margin-top: 1rem;
     }
-    .links a:hover {
-      text-decoration: underline;
+    .links a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.2s;
+    }
+    .links a:hover img {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -108,14 +109,14 @@
       <div class="skill">Jenkins</div>
     </div>
     <div class="links">
-      <a href="mailto:yarulsingh@gmail.com" target="_blank">
-        <i class="fas fa-envelope"></i>Email
+      <a href="mailto:yarulsingh@gmail.com" title="Email">
+        <img src="https://img.icons8.com/ios-glyphs/30/00ff9d/new-post.png" alt="Email">
       </a>
-      <a href="https://linkedin.com/in/yaruls" target="_blank">
-        <i class="fab fa-linkedin"></i>LinkedIn
+      <a href="https://linkedin.com/in/yaruls" title="LinkedIn" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/00ff9d/linkedin.png" alt="LinkedIn">
       </a>
-      <a href="https://github.com/yaruls" target="_blank">
-        <i class="fab fa-github"></i>GitHub
+      <a href="https://github.com/yaruls" title="GitHub" target="_blank">
+        <img src="https://img.icons8.com/ios-glyphs/30/00ff9d/github.png" alt="GitHub">
       </a>
     </div>
   </div>
