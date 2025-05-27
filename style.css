@@ -1,0 +1,222 @@
+body {
+    font-family: 'Arial', sans-serif; /* Choose a clean font like Open Sans, Lato, Montserrat */
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    padding-top: 56px; /* Adjust if navbar height changes - for fixed-top */
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 60px 0;
+    overflow: hidden; /* For any animations or elements that might overflow */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #00bcd4; /* Your accent color */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after { /* Underline effect like Karan's */
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00bcd4; /* Accent color */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* --- Navigation --- */
+.navbar {
+    background-color: rgba(26, 26, 26, 0.9) !important; /* Semi-transparent dark */
+    backdrop-filter: blur(5px); /* Frosted glass effect (not supported everywhere) */
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #00bcd4 !important; /* Accent color */
+}
+.nav-link {
+    color: #f0f0f0 !important;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active { /* You'll need JS to set .active on scroll */
+    color: #00bcd4 !important; /* Accent color */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100vh; /* Full viewport height */
+    background-color: #121212; /* Slightly different dark for hero */
+    /* Optional: Add a subtle background image or pattern */
+}
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hero-section .lead {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+#typing-effect {
+    color: #00bcd4; /* Accent color for the typed text */
+    border-right: 2px solid #00bcd4; /* Blinking cursor */
+    animation: blinkCursor 0.7s infinite;
+    padding-right: 2px;
+}
+
+@keyframes blinkCursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #00bcd4; }
+}
+
+.social-links .social-icon {
+    color: #f0f0f0;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.social-links .social-icon:hover {
+    color: #00bcd4; /* Accent color */
+}
+.scroll-down-arrow {
+    color: #f0f0f0;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-15px);}
+  60% {transform: translateY(-7px);}
+}
+
+
+/* --- About Section --- */
+#about {
+    background-color: #1f1f1f; /* Slightly different dark */
+}
+.skills-icons span {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    padding: 8px 12px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.skills-icons i {
+    margin-right: 8px;
+    color: #00bcd4; /* Accent color for icons */
+}
+
+/* --- Experience Section --- */
+#experience {
+    background-color: #1a1a1a;
+}
+.experience-item h4 {
+    color: #00bcd4; /* Accent color */
+}
+/* Optional: Add a vertical line for timeline effect */
+.experience-item {
+    position: relative;
+    /* padding-left: 20px; /* If using a line */
+}
+/*
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -5px; top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #00bcd4;
+}
+.experience-item::after {
+    content: '';
+    position: absolute;
+    left: -11px; top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00bcd4;
+    border: 2px solid #1a1a1a;
+}
+*/
+
+/* --- Projects Section --- */
+#projects {
+    background-color: #1f1f1f;
+}
+.project-card {
+    background-color: #2a2a2a; /* Card background */
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.project-card .card-title {
+    color: #00bcd4; /* Accent color */
+}
+.project-card .card-text {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+.tech-stack .badge {
+    background-color: #007c8a; /* Darker accent or related color */
+    margin-right: 5px;
+    font-weight: normal;
+}
+.project-card .btn-primary {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+.project-card .btn-primary:hover {
+    background-color: #0097a7;
+    border-color: #0097a7;
+}
+.project-card .btn-secondary {
+    background-color: #555;
+    border-color: #555;
+}
+.project-card .btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+
+/* --- Contact Section --- */
+#contact {
+    background-color: #1a1a1a;
+}
+#contact .btn-primary {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+#contact .btn-primary:hover {
+    background-color: #0097a7;
+    border-color: #0097a7;
+}
+#contact .social-icon {
+    color: #f0f0f0;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+#contact .social-icon:hover {
+    color: #00bcd4; /* Accent color */
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: #121212;
+    color: #888;
+    font-size: 0.9rem;
+}
