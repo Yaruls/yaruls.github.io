@@ -1,148 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yarul Shaik - Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> {/* Your custom styles */}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yarul Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      color: #00ff9d;
+    }
+    p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #bbbbbb;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      max-width: 800px;
+      margin-bottom: 3rem;
+    }
+    .skill {
+      background-color: #1e1e1e;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      color: #00ff9d;
+      transition: background 0.3s;
+    }
+    .skill:hover {
+      background-color: #292929;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      background: #0f0f0f;
+      color: #777;
+    }
+    .links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .links a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.2s;
+    }
+    .links a:hover img {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> {/* Make it dark and fixed */}
-        <a class="navbar-brand" href="#">Yarul Shaik</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
-        <div>
-            <h1>Hi, I'm Yarul Shaik</h1>
-            <p class="lead">I'm a <span id="typing-effect"></span></p> {/* For typing animation */}
-            <p>Brief intro about yourself, passionate about X, Y, Z.</p>
-            <div class="social-links">
-                <a href="your-linkedin-url" target="_blank" class="social-icon"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="your-github-url" target="_blank" class="social-icon"><i class="fab fa-github fa-2x"></i></a>
-                {/* Add other social links */}
-            </div>
-            <a href="#about" class="scroll-down-arrow mt-4 d-block"><i class="fas fa-chevron-down fa-2x"></i></a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="path/to/your-profile-pic.jpg" alt="Yarul Shaik" class="img-fluid rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
-                </div>
-                <div class="col-md-8">
-                    <p>Your detailed about me text here. Talk about your passion, skills, what you're learning, what you're looking for.</p>
-                    <h3 class="mt-4">Skills</h3>
-                    <div class="skills-icons">
-                        <span><i class="fab fa-html5"></i> HTML</span>
-                        <span><i class="fab fa-css3-alt"></i> CSS</span>
-                        <span><i class="fab fa-js-square"></i> JavaScript</span>
-                        <span><i class="fab fa-python"></i> Python</span>
-                        {/* Add more skills with icons */}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light"> {/* Or a slightly different background */}
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Experience</h2>
-            {/* Example Experience Item (repeat for each) */}
-            <div class="experience-item mb-4">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h4>Company Name</h4>
-                        <p><em>Role Title</em></p>
-                        <p><small>Date Range (e.g., Jan 2022 - Present)</small></p>
-                    </div>
-                    <div class="col-md-9">
-                        <ul>
-                            <li>Responsibility/Achievement 1.</li>
-                            <li>Responsibility/Achievement 2.</li>
-                            <li>Responsibility/Achievement 3.</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr class="d-md-none"> {/* Separator for mobile */}
-            </div>
-            {/* Add more experience items */}
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">My Projects</h2>
-            <div class="row">
-                {/* Copy your project cards here from projects.html, then restyle */}
-                {/* Example Project Card (adapt your existing structure) */}
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card h-100">
-                        {/* <img src="path/to/project-image.jpg" class="card-img-top" alt="Project Name"> */}
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Project Title</h5>
-                            <p class="card-text flex-grow-1">Brief project description.</p>
-                            <div class="tech-stack mb-2">
-                                <span class="badge badge-info">HTML</span>
-                                <span class="badge badge-info">CSS</span>
-                                <span class="badge badge-info">JavaScript</span>
-                            </div>
-                            <div>
-                                <a href="#" class="btn btn-primary btn-sm">GitHub</a>
-                                <a href="#" class="btn btn-secondary btn-sm">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* Repeat for other projects */}
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light"> {/* Or a different background */}
-        <div class="container text-center">
-            <h2 class="section-title mb-4">Get In Touch</h2>
-            <p class="lead">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-            <a href="mailto:your.email@example.com" class="btn btn-lg btn-primary my-3">Say Hello</a>
-            <div class="social-links mt-3">
-                <a href="your-linkedin-url" target="_blank" class="social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
-                <a href="your-github-url" target="_blank" class="social-icon"><i class="fab fa-github fa-3x"></i></a>
-                {/* Add other social links */}
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-3">
-        <p>© <script>document.write(new Date().getFullYear())</script> Yarul Shaik. Designed with inspiration.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script> {/* Your custom JS */}
+  <div class="container">
+    <h1>Hey, I'm <span class="highlight">Yarul Singh</span></h1>
+    <p>
+      A Software Engineer with 6+ years of experience specialize in Software Development using JAVA and AWS Lambdas with Node.js. <br>
+      I am a computer enthusiast who loves to code and learn new technologies. I have been recognized at my work place as well-organized and customer-focused employee. <br>
+      An optimist, determined, dedicated and a sharp observant by nature. <br>
+      Beyond the realm of coding, I find joy in immersing myself in the serenity of nature, seeking inspiration for new ideas. <br>
+      Eager to embrace every opportunity, I'm excited to contribute my expertise to future projects. <br>
+    </p>
+<!--     <div class="skills">
+      <div class="skill">Java</div>
+      <div class="skill">Spring Boot</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">AWS Lambda</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">Microservices</div>
+      <div class="skill">Git</div>
+      <div class="skill">JIRA</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Jenkins</div>
+    </div> -->
+    <div class="links">
+      <a href="mailto:yarulsingh@gmail.com" title="Email">
+        <img src="https://img.icons8.com/ios-glyphs/30/00ff9d/new-post.png" alt="Email">
+      </a>
+      <a href="https://linkedin.com/in/yaruls" title="LinkedIn" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/00ff9d/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/yaruls" title="GitHub" target="_blank">
+        <img src="https://img.icons8.com/ios-glyphs/30/00ff9d/github.png" alt="GitHub">
+      </a>
+    </div>
+  </div>
 </body>
 </html>
